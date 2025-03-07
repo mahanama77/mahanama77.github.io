@@ -46,10 +46,50 @@
         </figure>
 
         <div class="info-content">
-          <h2 class="name" title="Hasindu Mahanam">"Hasindu <br>Mahanama"</h2>
-
-          <p class="title">IT Student (University Of Moratuwa)</p>
+          <h2 class="name" title="Hasindu Mahanama">"Hasindu <br>Mahanama"</h2>
+          <p class="title">Contact Me 👇🏻</p>
         </div>
+        
+        <style>
+          .name {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+            animation: fadeIn 2s ease-out infinite alternate; /* Always animating */
+            cursor: pointer; /* Changes mouse pointer to a hand */
+          }
+        
+          .title {
+            font-size: 1.9em;
+            color: #333;
+            transition: font-size 0.3s ease;
+          }
+        
+          .title:hover {
+            font-size: 1.2em; /* Slightly larger font size on hover */
+            color: #d4af37; /* Gold color on hover */
+          }
+        
+          /* Animation for the name */
+          @keyframes fadeIn {
+    0% { 
+      opacity: 0; 
+      transform: translateY(-50px); 
+      color: white; /* Start with white */
+    }
+    50% { 
+      opacity: 0.5; 
+      transform: translateY(10px); 
+      color: white; /* Stay white halfway */
+    }
+    100% { 
+      opacity: 1; 
+      transform: translateY(0); 
+      color: #d4af37; /* End with yellow (gold) */
+    }
+  }
+        </style>
+        
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
@@ -73,12 +113,23 @@
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
-              <a href="mailto:contactmahanama@gmail.com" class="contact-link" target="_blank">click here</a>
-
-
-
+              <a href="mailto:contactmahanama@gmail.com" class="contact-link" target="_blank">Click Here</a>
             </div>
+            
+            <style>
+              .contact-link {
+                text-decoration: none;
+                color: #007BFF; /* Blue color */
+                font-weight: bold;
+                transition: transform 0.3s ease, color 0.3s ease;
+              }
+            
+              .contact-link:hover {
+                color: #d4af37; /* Change color to gold on hover */
+                transform: scale(1.1); /* Slight zoom effect */
+              }
+            </style>
+            
 
           </li>
 
@@ -121,7 +172,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Beliatta, Sothern Province, Sri Lanka.</address>
+              <address>Beliatta, Sri Lanka.</address>
             </div>
 
           </li>
@@ -223,10 +274,26 @@
         </header>
 
         <section class="about-text">
-          <p>
-            A student at the University of Moratuwa's Faculty of Information Technology studying information technology. By using my expertise to address real-world issues that improve people's lives, especially those involving science and technology, I hope to have a successful career. Additionally, I'm interested in leveraging the knowledge I've acquired through my college studies to solve these issues.
+          <style>
+            .highlight {
+              color: #d4af37; /* Subtle gold color */
+              font-weight: bold;
+            }
+            .animate {
+              display: inline-block;
+              animation: fadeIn 1.5s ease-in-out infinite alternate;
+            }
+            @keyframes fadeIn {
+              from { opacity: 0.6; }
+              to { opacity: 1; }
+            }
+          </style>
+          
+          <p style="text-align: justify; font-size: 16px; color: #f6f4f4;">
+            A creative and innovative software engineer passionate about building intelligent solutions with real-world impact. With expertise in Agile methodologies, AI integration, and scalable system design, I thrive in fast-paced environments where technological innovation meets real-world application. As a problem solver and a driving force in the industry, I combine strong technical expertise with a deep understanding of business objectives to deliver value-driven outcomes.
           </p>
-        </section>
+          
+          </section>
 
 
         <!--
@@ -242,14 +309,13 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web design</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" style="text-align: justify;">
                   The most modern and high-quality design made at a intermediate level.
                 </p>
               </div>
@@ -265,7 +331,7 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web development</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" style="text-align: justify;">
                   High-quality development of sites at the intermediate level.
                 </p>
               </div>
@@ -279,11 +345,12 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">AL Tutor/Teacher</h4>
+                <h4 class="h4 service-item-title">Mobile Development</h4>
 
-                <p class="service-item-text">
-                  Above 4 years experience in. <br> Physics and ICT (Local & London AL) <br> Online & Physical Individual & Group
+                <p class="service-item-text" style="text-align: justify;">
+                  High-quality development of mobile applications at the intermediate level.
                 </p>
+                
               </div>
 
             </li> 
@@ -329,7 +396,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Automated machine </h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p style="text-align: justify;">
                     The "Automated king coconut water filling & capping machine" is an advanced device that fills and seals king coconut water bottles with ease. Its automation maximizes efficiency and eliminates manual labor. This machine accurately fills and securely caps the bottles, ensuring a seamless production process. It provides a reliable and convenient solution for companies in the king coconut water industry.
                   </p>
                 </div>
@@ -347,30 +414,8 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>CRM System </h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p style="text-align: justify;">
                     CRM is a Customer Relationship Management system that provides some cool features such as payment reminders, chat system, survey generation, newsletters, and other distinctive functionalities to enhance the company's operational efficiency. This is the second year Industry based project which was mentored by 99x.  
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <!-- <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                   </p>
                 </div>
 
@@ -381,24 +426,101 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/icons8-program-50.png" alt="Jessica miller" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Promo Income</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  <p style="text-align: justify;">
+                    Promo Income project is related to supermarket chain (Internship Project 01), this app helps to monitor promotions about sales goods.
+                    <p>👩🏻‍💻Role : Full Stack Developer</p>
+                    <p>👩🏻‍💻Technologies : ReactJS, .NET, MSSQL, Azure DevOps</p>
                   </p>
                 </div>
 
               </div>
-            </li> -->
+            </li>
 
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/icons8-program-50.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Intranet Project</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="text-align: justify;">
+                    John Keells Holdings retail sector Intranet application is a very old platform; this platform was used in the visual basic, Converted this app for a new tech stack
+
+                    <p>👩🏻‍💻Role : Full Stack Developer</p>
+                    <p>👩🏻‍💻Technologies : ReactJS, .NET, MSSQL, Azure DevOps</p>
+                  </p>
+                </div>
+
+              </div>
+            </li> 
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/icons8-program-50.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Employee Management System</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="text-align: justify;">
+                    This System with an intuitive interface that allows users to easily manage departments and employees. The system enables adding, editing, and deleting departments, while ensuring mandatory fields for employee data.
+
+                    <p>👩🏻‍💻Role : Full Stack Developer</p>
+                    <p>👩🏻‍💻Technologies : ReactJS, .NET, MSSQL</p>
+                  </p>
+                </div>
+
+              </div>
+            </li> 
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/icons8-program-50.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>AutoRent - Ongoing</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="text-align: justify;">
+                    This is a car rental application that allows users to book vehicles, manage rentals, and handle customer reservations. Included features for updating vehicle details and providing a smooth user experience for rental operations.
+                    <p>👩🏻‍💻Role : Full Stack Developer | | Project leader</p>
+                    <p>👩🏻‍💻Technologies : Angular, Node.js, MongoDB</p>
+                </div>
+
+              </div>
+            </li> 
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/icons8-program-50.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>TourAI - Ongoing</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="text-align: justify;">
+                    Final year research base group project on leveraging AI in tourism to optimize revenue, enhance travel experiences in Sri Lanka, and detect fake reviews. (Group Leader)
+                    
+                    <p>👩🏻‍💻Technologies : Machine Learning (ML) and Python</p>
+                </div>
+
+              </div>
+            </li>
           </ul>
 
         </section>
@@ -548,134 +670,247 @@
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Ruhunu Vijayaba National School</h4>
-
-              <span>2007 — 2018</span>
-
-              <p class="timeline-text">
-                AL (2018)  <Br>Physics "A"<br> Biology "B"<br> Chemistry "B"
+              <span>2007 — 2019</span>
+              <p class="timeline-text" style="text-align: justify;">
+                Completed the Advanced Level (A/L) in the Biological Science stream | Rank of 95.
               </p>
-
             </li>
+            
+            <style>
+              .timeline-text {
+                font-size: 1em;
+                line-height: 1.6;
+                color: #ffffff;
+              }
+            </style>
+            
 
           </ol>
 
         </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Experience</h3>
           </div>
-
+        
           <ol class="timeline-list">
-
+            
+            <!-- Work Experience (Latest on top) -->
+            <li class="timeline-item highlighted">
+              <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+              <span>John Keells Holdings - IT, 2024</span>
+              <p class="timeline-text" style="text-align: justify;">
+                Successfully delivered full-stack projects with minimal supervision by demonstrating strong problem-solving and collaboration skills across the SDLC. Developed user-friendly features that have improved user interactions and optimized data processing. Contributed to architectural design and deployment, ensuring alignment with business goals and high-quality execution.
+              </p>
+            </li>
+        
+            <!-- University Experience -->
             <li class="timeline-item">
-
+              <h4 class="h4 timeline-item-title">Information Technology Student</h4>
+              <span>2021 — Present</span>
+              <p class="timeline-text" style="text-align: justify;">
+                Engaged in various academic and extracurricular activities, gaining a solid foundation in computer science, software engineering, AI, and machine learning. Actively participated in projects that focus on solving real-world issues in technology.
+              </p>
+            </li>
+        
+            <!-- School Experience -->
+            <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Senior Prefect</h4>
-
               <span>2015 — 2018</span>
-
-              <p class="timeline-text">
-                
+              <p class="timeline-text" style="text-align: justify;">
+                Led and organized key school events, served as a representative for students, and helped bridge communication between the administration and students, fostering leadership and teamwork skills.
               </p>
-
             </li>
-
+        
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Media club member</h4>
-
+              <h4 class="h4 timeline-item-title">Media Club Member</h4>
               <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                
+              <p class="timeline-text" style="text-align: justify;">
+                Actively participated in school media and event coverage, creating video and written content for school publications and social media platforms, gaining valuable skills in communication and media production.
               </p>
-
             </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Tutor</h4>
-
-              <span>2019 — Present</span>
-
-              <p class="timeline-text">
-               
-              </p>
-
-            </li>
-
+            
           </ol>
-
         </section>
+        
+        <style>
+          .timeline-text {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #ffffff;
+          }
+        
+          /* Highlighted Work Experience */
+          .timeline-item.highlighted {
+            border: 2px solid #ffcc00;  /* Gold border */
+            background-color: #333333;  /* Dark background for emphasis */
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;  /* Rounded corners for aesthetics */
+          }
+        
+          .timeline-item.highlighted h4 {
+            color: #ffcc00;  /* Gold color for the title */
+          }
+        
+          .timeline-item.highlighted span {
+            color: #ffcc00;  /* Gold color for the date */
+          }
+        </style>
+        
+        
 
-        <section class="skill">
+        <section class="skill" style="color: white;">
+          <h3 class="h3 skills-title" style="color: #00bcd4;">Technical Skills</h3>
+          
+          <div class="skills-container">
+        
+            <!-- Programming Languages -->
+            <div class="skills-category">
+              <h4 class="h4 category-title">
+                <img src="https://img.icons8.com/ios/50/000000/code.png" alt="Programming Languages icon" class="icon"> 
+                PROGRAMMING LANGUAGES
+              </h4>
+              <ul class="technologies-list">
+                <li><span class="bullet"></span> Java</li>
+                <li><span class="bullet"></span> Python</li>
+                <li><span class="bullet"></span> C</li>
+              </ul>
+            </div>
+        
+            <!-- Web Development -->
+            <div class="skills-category web-development">
+              <h4 class="h4 category-title">
+                <!-- Updated Image Source -->
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968765.png" alt="Web Development Icon" style="width: 30px; height: 30px; margin-right: 10px;">
 
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design </h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">DBMS</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
+                WEB DEVELOPMENT
+              </h4>
+              <ul class="technologies-list grid-layout">
+                <li><span class="bullet"></span> HTML</li>
+                <li><span class="bullet"></span> CSS</li>
+                <li><span class="bullet"></span> JavaScript</li>
+                <li><span class="bullet"></span> Node.js</li>
+                <li><span class="bullet"></span> React</li>
+                <li><span class="bullet"></span> .NET</li>
+              </ul>
+            </div>
+        
+            <!-- Database -->
+            <div class="skills-category">
+              <h4 class="h4 category-title">
+                <img src="https://img.icons8.com/ios/50/000000/database.png" alt="Database icon" class="icon">
+                DATABASE
+              </h4>
+              <ul class="technologies-list">
+                <li><span class="bullet"></span> MS SQL</li>
+                <li><span class="bullet"></span> MySQL</li>
+                <li><span class="bullet"></span> MongoDB</li>
+              </ul>
+            </div>
+        
+            <!-- Mobile Development -->
+            <div class="skills-category">
+              <h4 class="h4 category-title">
+                <img src="https://img.icons8.com/ios/50/000000/android.png" alt="Mobile Development icon" class="icon">
+                MOBILE DEVELOPMENT
+              </h4>
+              <ul class="technologies-list">
+                <li><span class="bullet"></span> Android Studio</li>
+              </ul>
+            </div>
+        
+          </div>
+        
+          <style>
+            .skills-container {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px;
+              justify-content: space-between;
+            }
+        
+            .skills-category {
+              width: 45%;
+              padding: 10px;
+              background-color: #333;
+              border-radius: 8px;
+              margin: 10px 0;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+              overflow: hidden; /* Prevents content overflow */
+              border: 2px solid #00bcd4; /* Blue border for all subtopics */
+            }
+        
+            .category-title {
+              display: flex;
+              align-items: center;
+              font-size: 1.5rem;
+              color: white;
+              margin-bottom: 15px;
+            }
+        
+            .icon {
+              margin-right: 10px;
+              width: 30px;
+            }
+        
+            .technologies-list {
+              color: white;
+              list-style-type: none;
+              padding-left: 0;
+              font-size: 1.1rem;
+            }
+        
+            .technologies-list li {
+              margin-bottom: 10px;
+              display: flex;
+              align-items: center;
+            }
+        
+            .bullet {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: #00bcd4;
+              margin-right: 10px;
+            }
+        
+            /* Web Development Section - 3x2 Grid Layout */
+            .technologies-list.grid-layout {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr); /* 3 columns in the first row */
+              gap: 20px;
+            }
+        
+            /* Web Development Section - Border/Frame */
+            .web-development {
+              border: 2px solid #00bcd4; /* Adding frame */
+              border-radius: 8px;
+              padding: 15px;
+              overflow: hidden; /* Prevents overflow */
+            }
+        
+            .technologies-list.grid-layout li:nth-child(4), /* Start the second row */
+            .technologies-list.grid-layout li:nth-child(5),
+            .technologies-list.grid-layout li:nth-child(6) {
+              grid-column: span 1;
+            }
+          </style>
         </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
       </article>
 
